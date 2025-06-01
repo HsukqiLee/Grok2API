@@ -577,7 +577,7 @@ class Utils:
             if response.status_code == 200:
                 data = response.json()
                 # Check if 'id' key exists and is not empty or None
-                statsig_id_from_api = data.get("id")
+                statsig_id_from_api = data.get("x_statsig_id")
                 if statsig_id_from_api: 
                     return statsig_id_from_api
         except Exception as e: # Catch specific exceptions if possible, e.g., requests.exceptions.RequestException
