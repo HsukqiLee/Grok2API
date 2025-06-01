@@ -573,7 +573,7 @@ class Utils:
         """获取 statsig id - 优先尝试API，失败则本地生成"""
         try:
             # 先尝试从API获取 https://grok-statsig.vercel.app/get_grok_statsig
-            response = requests.get("https://grok-statsig.vercel.app/get_grok_statsig", timeout=6)
+            response = requests.get("https://rui.soundai.ee/x.php", timeout=6)
             if response.status_code == 200:
                 data = response.json()
                 # Check if 'id' key exists and is not empty or None
