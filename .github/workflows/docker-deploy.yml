@@ -11,6 +11,9 @@ on:
     paths-ignore:
       - 'README.md' # 忽略README.md修改触发
       - '.dockerignore' # 忽略.dockerignore修改触发
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   build-and-push:
